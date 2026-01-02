@@ -293,3 +293,209 @@ hr {
     border-top: 1px dashed #ccc;
     margin-top: 40px;
 }
+
+/* ==== CATEGORY SECTION ==== */
+.category-section {
+  margin-top: 120px;
+  text-align: center;
+  height: 620px;
+}
+
+.category-section h1 {
+  font-size: 36px;
+  color: #233000;
+  margin-bottom: 40px;
+}
+
+/* Grid untuk semua kategori */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin: 0 50px;
+}
+
+/* Card tiap kategori */
+.category-card {
+  position: relative;
+  width: 300px;
+  background: linear-gradient(to top, #5E6600 0%, rgba(94, 102, 0, 0) 100%);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.category-card img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Overlay teks + tombol */
+.overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.overlay h2 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.overlay button {
+  background: #fff;
+  color: #333;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+/* ==== FOOD SECTION ==== */
+.food-section {
+  background-color: #1f2a00;
+  text-align: center;
+  padding: 50px;
+}
+
+.section-header h1,
+.section-header p {
+  color: white;
+  padding: 10px 0;
+}
+
+/* ==== CARD GRID ==== */
+.grid-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 3 kolom tetap */
+  gap: 30px;
+  /* jarak antar kolom dan baris */
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+/* ==== CARD CONTENT ==== */
+.card-content {
+  background-color: #EBF0E4;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: left;
+}
+
+.card-content h2,
+.card-content .promo,
+.card-content .location {
+  color: #233000;
+}
+
+.food-card {
+  width: 260px;
+  /* lebar tetap untuk card */
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #EBF0E4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.food-card img {
+  width: 100%;
+  /* gambar mengikuti lebar card */
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: left;
+}
+
+/* ==== REKOMENDASI SECTION ==== */
+.rekomendasi-section {
+  background-color: #EBF0E4;
+  padding: 80px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  height: auto;
+}
+
+.footer-img {
+  /* Perbaikan sintaks background-image */
+  background-image: url("../Assets/Rekomendasi.png"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  width: 100%;
+  max-width: 1200px;
+  height: 450px;
+  border-radius: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 60px;
+  
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-top: 0; 
+}
+
+/* Overlay gelap agar teks terbaca */
+.footer-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 70%);
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.footer-overlay {
+  position: relative;
+  z-index: 2; /* Agar di atas overlay gelap */
+  text-align: left;
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-overlay h1 {
+  font-size: 48px;
+  color: #FFFFFF; /* Teks Putih */
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.footer-overlay button {
+  padding: 12px 35px;
+  border-radius: 8px;
+  background-color: #EBF0E4; /* Warna tombol senada background luar */
+  color: #233000;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  transition: transform 0.3s ease
+}
