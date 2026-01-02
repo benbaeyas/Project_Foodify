@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #233000;
+    --secondary-color: #EBF0E4;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+
+/* Login/register Form Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--primary-color) url('/images/image8.png') no-repeat center fixed;
+    background-size: cover;
+}
+
+.login-form {
+    background-color: var(--secondary-color);
+    padding: 22px 52px;
+    width: 340px;
+    height: 310px;
+    border-radius: 15px;
+}
+
+
+.login-form h2,
+.login-form p {
+    text-align: center;
+}
+
+.form-group label,
+.form-group input {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    /* jarak antara label dan input */
+    color: var(--primary-color);
+}
+
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.login-form button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 12px;
+}
